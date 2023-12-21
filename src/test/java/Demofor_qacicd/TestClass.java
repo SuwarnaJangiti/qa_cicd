@@ -42,9 +42,9 @@ public class TestClass {
 	options.addArguments("headless");
 	WebDriverManager.chromedriver().setup();
 	driver=new ChromeDriver(options);
-	driver.get("https://www.browserstack.com/");
+	driver.get("https://www.google.com/");
 	System.out.println("Title is: " +driver.getTitle());
-	Assert.assertEquals(driver.getTitle(), "Most Reliable App & Cross Browser Testing Platform | BrowserStack");
+	Assert.assertEquals(driver.getTitle(), "Google");
 	driver.quit();
 	}
 	
