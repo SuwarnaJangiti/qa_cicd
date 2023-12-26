@@ -43,7 +43,7 @@ public class TestClass {
 	WebDriverManager.chromedriver().setup();
 	driver=new ChromeDriver(options);
 	driver.get("https://www.google.com/");
-	System.out.println("Current url is: " +driver.getCurrentUrl();	
+	System.out.println("Current url is: " +driver.getCurrentUrl());	
 	System.out.println("Title is: " +driver.getTitle());
 	Assert.assertEquals(driver.getTitle(), "Google");
 	driver.quit();
