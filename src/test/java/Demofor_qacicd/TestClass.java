@@ -45,7 +45,7 @@ public class TestClass {
 	driver.get("https://ananthjeevan.in/");
 	String url=driver.getCurrentUrl();
 	System.out.println("Current url is: " +driver.getCurrentUrl());	
-	test.info("Current url is : "+ url)	
+	test.info("Current url is : "+ url);	
 	System.out.println("Title is: " +driver.getTitle());
 	Assert.assertEquals(driver.getTitle(), "Ananth Jeevan - Life in its fullness");
 	driver.quit();
