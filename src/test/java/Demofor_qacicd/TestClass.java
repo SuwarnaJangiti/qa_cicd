@@ -51,6 +51,7 @@ public class TestClass {
 	System.out.println("Title is: " +driver.getTitle());
 //	Assert.assertEquals(driver.getTitle(), "Ananth Jeevan - Life in its fullness");
 	Assert.assertEquals(driver.getTitle(), "Bible Study");
+	Thread.sleep(2000);
 //	driver.findElement(By.xpath("//button[text()='Sign up/Sign in']")).click();
 	Thread.sleep(2000);
 	driver.quit();
