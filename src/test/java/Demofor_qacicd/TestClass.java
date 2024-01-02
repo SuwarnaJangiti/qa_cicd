@@ -37,21 +37,22 @@ public class TestClass {
 	}
 	
 	@Test
-	public void verifyTitle() {
+	public void verifyTitle() throws InterruptedException {
 	//WebDriverManager.chromedriver().setup();
 	ChromeOptions options=new ChromeOptions();
 	options.addArguments("headless");
 	WebDriverManager.chromedriver().setup();
 	driver=new ChromeDriver(options);
-	driver.get("https://ananthjeevan.in/");
-//	driver.get("http://192.168.0.34:3000/");
+//	driver.get("https://ananthjeevan.in/");
+	driver.get("http://192.168.0.34:3000/");
 	String url=driver.getCurrentUrl();
 	System.out.println("Current url is: " +driver.getCurrentUrl());	
 	test.info("Current url is : "+ url);	
 	System.out.println("Title is: " +driver.getTitle());
-	Assert.assertEquals(driver.getTitle(), "Ananth Jeevan - Life in its fullness");
-//	Assert.assertEquals(driver.getTitle(), "Bible Study");
+//	Assert.assertEquals(driver.getTitle(), "Ananth Jeevan - Life in its fullness");
+	Assert.assertEquals(driver.getTitle(), "Bible Study");
 //	driver.findElement(By.xpath("//button[text()='Sign up/Sign in']")).click();
+	Thread.sleep(2000);
 	driver.quit();
 	}
 	
