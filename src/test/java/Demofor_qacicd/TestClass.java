@@ -1,5 +1,6 @@
 package Demofor_qacicd;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -50,6 +51,7 @@ public class TestClass {
 	System.out.println("Title is: " +driver.getTitle());
 //	Assert.assertEquals(driver.getTitle(), "Ananth Jeevan - Life in its fullness");
 	Assert.assertEquals(driver.getTitle(), "Bible Study");
+	driver.findElement(By.xpath("//button[text()='Sign up/Sign in']")).click();
 	driver.quit();
 	}
 	
