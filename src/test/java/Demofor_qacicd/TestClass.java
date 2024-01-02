@@ -44,7 +44,7 @@ public class TestClass {
 	WebDriverManager.chromedriver().setup();
 	driver=new ChromeDriver(options);
 //	driver.get("https://ananthjeevan.in/");
-	driver.get("http://192.168.0.34:3000/");
+	driver.get("http://192.168.0.34:5173");
 	String url=driver.getCurrentUrl();
 	System.out.println("Current url is: " +driver.getCurrentUrl());	
 	test.info("Current url is : "+ url);	
