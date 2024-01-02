@@ -42,12 +42,14 @@ public class TestClass {
 	options.addArguments("headless");
 	WebDriverManager.chromedriver().setup();
 	driver=new ChromeDriver(options);
-	driver.get("https://ananthjeevan.in/");
+//	driver.get("https://ananthjeevan.in/");
+	driver.get("http://192.168.0.34:3000/");
 	String url=driver.getCurrentUrl();
 	System.out.println("Current url is: " +driver.getCurrentUrl());	
 	test.info("Current url is : "+ url);	
 	System.out.println("Title is: " +driver.getTitle());
-	Assert.assertEquals(driver.getTitle(), "Ananth Jeevan - Life in its fullness");
+//	Assert.assertEquals(driver.getTitle(), "Ananth Jeevan - Life in its fullness");
+	Assert.assertEquals(driver.getTitle(), "Bible Study");
 	driver.quit();
 	}
 	
